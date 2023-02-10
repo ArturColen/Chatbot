@@ -11,9 +11,9 @@ def start():
         
         process_answer(answer, name)
 
+        # Check whether the conversation will continue or stop
         proceed = input(f'Posso te ajudar em algo mais? (S/N) {os.linesep}').lower()
-
-        ## Check whether the conversation will continue or stop
+        
         if proceed == 's':
             continue
         elif proceed == 'n':
