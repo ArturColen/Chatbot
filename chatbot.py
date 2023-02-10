@@ -13,10 +13,14 @@ def start():
 
         proceed = input(f'Posso te ajudar em algo mais? (S/N) {os.linesep}').lower()
 
+        ## Check whether the conversation will continue or stop
         if proceed == 's':
             continue
-        else:
+        elif proceed == 'n':
             print(f'{os.linesep}Muito obrigado pelo contato, {name}! Caso precise de algo mais é só chamar :)')
+            break
+        else:
+            print(f'{os.linesep}Não entendi o que você escreveu... Vou finalizar a conversa. {os.linesep}{os.linesep}Caso precise de algo mais é só chamar :)')
             break
 
 # Check the alternative entered and show a response
