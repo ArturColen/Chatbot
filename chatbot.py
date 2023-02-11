@@ -4,7 +4,7 @@ import os
 def start():
     print('Olá! Sou o assistente virtual do Food from Brazil. Será um prazer te ajudar!')
 
-    name = input(f'{os.linesep}Por gentileza, me informe o seu nome: ').capitalize()
+    name = input(f'{os.linesep}Por gentileza, me informe o seu nome: ').title()
 
     while True:
         answer = input(f'{os.linesep}{name}, selecione sobre o que deseja falar:{os.linesep}{os.linesep}[1] - Cardápio{os.linesep}[2] - Endereço{os.linesep}[3] - Horário de funcionamento{os.linesep}[4] - Reservas{os.linesep}[5] - Condições de aniversário{os.linesep}[6] - Eventos{os.linesep}[7] - Outros{os.linesep}{os.linesep}')
