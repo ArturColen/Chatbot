@@ -1,6 +1,5 @@
 import os
 
-# Start the conversation with the user
 def start():
     print('Olá! Sou o assistente virtual do Food from Brazil. Será um prazer te ajudar!')
 
@@ -11,7 +10,6 @@ def start():
         
         process_answer(answer, name)
 
-        # Check whether the conversation will continue or stop
         proceed = input(f'Posso te ajudar em algo mais? (S/N) {os.linesep}').lower()
         
         if proceed == 's':
@@ -23,7 +21,6 @@ def start():
             print(f'{os.linesep}Não entendi o que você escreveu... Vou finalizar a conversa. {os.linesep}{os.linesep}Caso precise de algo mais é só chamar :)')
             break
 
-# Check the alternative entered and show a response
 def process_answer(answer, name):
     if answer == '1':
         print(f'{os.linesep}Esse é o link do nosso cardápio digital que te dá acesso ao nosso delicioso menu!{os.linesep}foodfrombrazil.com/cardapio/{os.linesep}')
@@ -42,6 +39,5 @@ def process_answer(answer, name):
     else:
         print(f'{os.linesep}Não entendi o que você escreveu... Favor digitar uma alternativa válida.{os.linesep}')
 
-# Execute the program
 if __name__ == '__main__':
     start()
