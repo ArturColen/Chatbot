@@ -9,4 +9,4 @@ Send automatic messages to a user who wants to know some key information about t
 * [OS](https://docs.python.org/pt-br/3.7/library/os.html): generate a line break in writing
 
 ## 📁 Access and execute project
-Access the [link](https://replit.com/@ArturColen/Chatbot) and, once the page has loaded, click on Run to test the project.
+Access the [link](https://replit.com/@ArturColen/Chatbot) and, once the page has loaded, click on Run to test the program.
